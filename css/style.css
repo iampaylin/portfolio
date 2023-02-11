@@ -1,0 +1,406 @@
+*, html {
+  margin: 0;
+  padding: 0;
+  scroll-behavior: smooth;
+}
+
+body {
+  background: #0A0909;
+  font-family: "Saira", sans-serif;
+  display: flex;
+  width: 100%;
+  flex-direction: column;
+  scroll-behavior: smooth !important;
+}
+
+header {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  align-content: center;
+  padding: 6px;
+}
+header img {
+  width: 50px;
+  height: 50px;
+}
+@media screen and (max-width: 720px) {
+  header img {
+    width: 45px;
+    height: 45px;
+  }
+}
+@media screen and (max-width: 576px) {
+  header img {
+    width: 40px;
+    height: 40px;
+  }
+}
+header ul {
+  list-style-type: none;
+}
+header ul .link {
+  display: inline-block;
+  margin: 0px 16px;
+}
+@media screen and (max-width: 576px) {
+  header ul .link {
+    display: none;
+  }
+}
+header ul .li-mobile {
+  display: none;
+}
+@media screen and (max-width: 576px) {
+  header ul .li-mobile {
+    display: inline-block;
+    color: #F1F1ED;
+    font-size: 18px;
+  }
+}
+header ul a {
+  color: #F1F1ED;
+  text-decoration: none;
+  font-size: 20px;
+  transition: 0.6s ease;
+}
+@media screen and (max-width: 720px) {
+  header ul a {
+    font-size: 20px;
+  }
+}
+header ul a:hover {
+  opacity: 0.7;
+}
+header a {
+  text-decoration: none;
+}
+header a button {
+  width: 120px;
+  height: 40px;
+  background-color: #0A0909;
+  border: 2px solid #353333;
+  border-radius: 5px;
+  transition: 0.6s ease;
+  color: #F1F1ED;
+  font-size: 18px;
+  font-family: "Saira", sans-serif;
+}
+@media screen and (max-width: 576px) {
+  header a button {
+    width: 100px;
+    height: 40px;
+    font-size: 18px;
+  }
+}
+header a button:hover {
+  border: 2px solid #F1F1ED;
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  justify-items: center;
+  align-items: center;
+  align-content: center;
+  height: 635px;
+  background-image: url(./../img/main.jpg);
+  background-size: cover;
+}
+@media screen and (max-width: 720px) {
+  main {
+    background-image: url(./../img/maintablet.jpg);
+    background-size: cover;
+  }
+}
+@media screen and (max-width: 720px) {
+  main {
+    background-image: url(./../img/mainmobile.jpg);
+    background-size: cover;
+  }
+}
+main h2 {
+  font-size: 64px;
+  color: #F1F1ED;
+  letter-spacing: 6px;
+  margin-bottom: -25px;
+}
+@media screen and (max-width: 720px) {
+  main h2 {
+    font-size: 64px;
+  }
+}
+@media screen and (max-width: 576px) {
+  main h2 {
+    margin-bottom: -15px;
+    font-size: 36px;
+  }
+}
+main p {
+  font-size: 32px;
+  color: #8F8989;
+  margin-bottom: 25px;
+}
+@media screen and (max-width: 720px) {
+  main p {
+    font-size: 32px;
+  }
+}
+@media screen and (max-width: 576px) {
+  main p {
+    font-size: 20px;
+  }
+}
+main a {
+  text-decoration: none;
+}
+main a button {
+  width: 120px;
+  height: 40px;
+  background-color: #0A0909;
+  border: 2px solid #353333;
+  border-radius: 5px;
+  transition: 0.6s ease;
+  color: #F1F1ED;
+  font-size: 18px;
+  font-family: "Saira", sans-serif;
+}
+@media screen and (max-width: 576px) {
+  main a button {
+    width: 100px;
+    height: 40px;
+    font-size: 16px;
+  }
+}
+main a button:hover {
+  border: 2px solid #F1F1ED;
+}
+
+.sobremim {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: #F1F1ED;
+  padding: 10px;
+}
+.sobremim h2 {
+  text-align: center;
+  margin-bottom: 30px;
+}
+.sobremim p {
+  font-size: 24px;
+  text-align: left;
+  width: 60%;
+}
+@media screen and (max-width: 960px) {
+  .sobremim p {
+    font-size: 24px;
+  }
+}
+@media screen and (max-width: 720px) {
+  .sobremim p {
+    font-size: 18px;
+  }
+}
+@media screen and (max-width: 576px) {
+  .sobremim p {
+    font-size: 16px;
+  }
+}
+.sobremim .profile {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 90%;
+  margin-top: 30px;
+  margin-bottom: 90px;
+}
+.sobremim .profile img {
+  width: 70px;
+  height: 70px;
+  border-radius: 100%;
+  margin-right: 10px;
+}
+@media screen and (max-width: 960px) {
+  .sobremim .profile img {
+    width: 60px;
+    height: 60px;
+  }
+}
+@media screen and (max-width: 720px) {
+  .sobremim .profile img {
+    width: 55px;
+    height: 55px;
+  }
+}
+@media screen and (max-width: 576px) {
+  .sobremim .profile img {
+    width: 50px;
+    height: 50px;
+  }
+}
+.sobremim .profile .name {
+  width: 18%;
+  font-size: 24px;
+}
+@media screen and (max-width: 960px) {
+  .sobremim .profile .name {
+    font-size: 24px;
+    width: 23%;
+  }
+}
+@media screen and (max-width: 720px) {
+  .sobremim .profile .name {
+    font-size: 18px;
+    width: 28%;
+  }
+}
+@media screen and (max-width: 576px) {
+  .sobremim .profile .name {
+    font-size: 16px;
+    width: 30%;
+  }
+}
+
+.linguagens {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+  color: #F1F1ED;
+  margin-bottom: 90px;
+}
+.linguagens .separar {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-top: 30px;
+}
+.linguagens .separar .tech {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 8px 24px;
+  padding: 10px;
+  width: 150px;
+  height: 150px;
+  border: 2px solid #353333;
+  border-radius: 5px;
+  transition: 0.6s ease;
+}
+.linguagens .separar .tech h2 {
+  margin-top: 20px;
+  font-size: 18px;
+}
+.linguagens .separar .tech:hover {
+  border: 2px solid #F1F1ED;
+}
+
+.contato {
+  display: flex;
+  flex-direction: column;
+  padding: 20px;
+}
+.contato h2 {
+  text-align: center;
+  color: #F1F1ED;
+}
+.contato .contato-botao {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+.contato .contato-botao a {
+  text-decoration: none;
+}
+.contato .contato-botao a button {
+  width: 120px;
+  height: 40px;
+  background-color: #0A0909;
+  border: 2px solid #353333;
+  border-radius: 5px;
+  transition: 0.6s ease;
+  color: #F1F1ED;
+  font-size: 18px;
+  font-family: "Saira", sans-serif;
+  margin: 12px 10px 0px 10px;
+}
+@media screen and (max-width: 576px) {
+  .contato .contato-botao a button {
+    width: 100px;
+    height: 40px;
+    font-size: 16px;
+  }
+}
+.contato .contato-botao a button:hover {
+  border: 2px solid #F1F1ED;
+}
+.contato .contato-botao a .button-secondary {
+  width: 120px;
+  height: 40px;
+  background-color: #F1F1ED;
+  border: 2px solid #353333;
+  border-radius: 5px;
+  transition: 0.6s ease;
+  color: #0A0909;
+  font-size: 18px;
+  font-family: "Saira", sans-serif;
+  margin: 12px 10px 0px 10px;
+}
+@media screen and (max-width: 576px) {
+  .contato .contato-botao a .button-secondary {
+    width: 100px;
+    height: 40px;
+    font-size: 16px;
+  }
+}
+.contato .contato-botao a .button-secondary:hover {
+  border: 2px solid #F1F1ED;
+  background-color: #0A0909;
+  color: #F1F1ED;
+}
+
+.projetos {
+  text-align: center;
+  color: #F1F1ED;
+  margin-top: 40px;
+  margin-bottom: 30px;
+}
+.projetos .carrossel .container {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+}
+.projetos .carrossel .container a {
+  text-decoration: none;
+}
+.projetos .carrossel .container a .projeto {
+  width: 150px;
+  height: 150px;
+  margin: 20px 24px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  background-color: #0A0909;
+  border: 2px solid #353333;
+  border-radius: 5px;
+  transition: 0.6s ease;
+  color: #353333;
+}
+.projetos .carrossel .container a .projeto:hover {
+  border: 2px solid #F1F1ED;
+  color: #F1F1ED;
+}
+.projetos .carrossel .container a .projeto .font-icon {
+  font-size: 60px;
+}
+.projetos .carrossel .container a .projeto p {
+  margin-top: 20px;
+}/*# sourceMappingURL=style.css.map */

@@ -1,0 +1,456 @@
+*, html {
+    margin: 0;
+    padding: 0;
+    scroll-behavior: smooth;
+}
+
+@mixin resp-desktop {
+    @media screen and (max-width: 1200px) {
+        @content;
+    }
+}
+
+@mixin resp-large {
+    @media screen and (max-width: 960px) {
+        @content;
+    }
+}
+
+@mixin resp-medium {
+    @media screen and (max-width: 720px) {
+        @content;
+    }
+}
+
+@mixin resp-mobile {
+    @media screen and (max-width: 576px) {
+        @content;
+    }
+}
+
+@import "./partials/colors";
+@import "./partials/fontpx";
+
+body {
+    background: $principal-black;
+    font-family: 'Saira', sans-serif;
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+    scroll-behavior: smooth !important;
+
+}
+
+header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    align-content: center;
+    padding: 6px;
+
+
+    img {
+        width: 50px;
+        height: 50px;
+
+        @include resp-medium() {
+           width: 45px;
+           height: 45px; 
+        }
+
+        @include resp-mobile() {
+            width: 40px;
+            height: 40px;
+        }
+    }
+
+    ul {
+
+        list-style-type: none;
+
+        .link {
+
+            display: inline-block;
+            margin: 0px 16px;
+
+            @include resp-mobile() {
+                display: none;
+            }
+        }
+
+        .li-mobile {
+            display: none;
+
+            @include resp-mobile() {
+                display: inline-block;
+                color: $principal-white;
+                font-size: $menu-mobile;
+            }
+        }
+
+
+        a {
+            color: $principal-white;
+            text-decoration: none;
+            font-size: $menu-desktop;
+            transition: 0.6s ease;
+
+            @include resp-medium() {
+                font-size: $menu-tablet;
+            }
+
+            &:hover {
+                opacity: 0.7;
+            }
+        }
+    }
+
+    a {
+        text-decoration: none;
+
+        button {
+            width: 120px;
+            height: 40px;
+            background-color: $principal-black;
+            border: 2px solid $principal-gray;
+            border-radius: 5px;
+            transition: 0.6s ease;
+            color: $principal-white;
+            font-size: $botao-desktop;
+            font-family: 'Saira', sans-serif;
+
+            @include resp-mobile() {
+                width: 100px;
+                height: 40px;
+                font-size: $botao-mobile;
+            }
+    
+            &:hover {
+                border: 2px solid $principal-white;
+            }
+        }
+    }
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    justify-items: center;
+    align-items: center;
+    align-content: center;
+    height: 635px;
+    background-image: url(./../img/main.jpg);
+    background-size: cover;
+
+    @include resp-medium() {
+        background-image: url(./../img/maintablet.jpg);
+        background-size: cover;
+    }
+
+    @include resp-medium() {
+        background-image: url(./../img/mainmobile.jpg);
+        background-size: cover;
+    }
+
+    h2 {
+        font-size: $title-desktop;
+        color: $principal-white;
+        letter-spacing: 6px;
+        margin-bottom: -25px;
+
+        @include resp-medium() {
+            font-size: $title-tablet;
+        }
+
+        @include resp-mobile() {
+            margin-bottom: -15px;
+            font-size: $title-mobile;
+        }
+    }
+
+    p {
+        font-size: $title-secondary-desktop;
+        color: #8F8989;
+        margin-bottom: 25px;
+
+        @include resp-medium() {
+            font-size: $title-secondary-tablet;
+        }
+
+        @include resp-mobile() {
+            font-size: $title-secondary-mobile;
+        }
+    }
+    
+    a {
+        text-decoration: none;
+
+        button {
+            width: 120px;
+            height: 40px;
+            background-color: $principal-black;
+            border: 2px solid $principal-gray;
+            border-radius: 5px;
+            transition: 0.6s ease;
+            color: $principal-white;
+            font-size: $botao-desktop;
+            font-family: 'Saira', sans-serif;
+
+            @include resp-mobile() {
+                width: 100px;
+                height: 40px;
+                font-size: 16px;
+            }
+    
+            &:hover {
+                border: 2px solid $principal-white;
+            }
+        }
+    }
+}
+
+.sobremim {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: $principal-white;
+    padding: 10px;
+
+    h2 {
+        text-align: center;
+        margin-bottom: 30px;
+    }
+
+    p {
+        font-size: $par-desktop;
+        text-align: left;
+        width: 60%;
+
+        @include resp-large() {
+            font-size: $par-desktop;
+        }
+
+        @include resp-medium() {
+            font-size: $par-tablet;
+        }
+
+        @include resp-mobile() {
+            font-size: $par-mobile;
+        }
+    }
+
+    .profile {
+
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width:90%;
+        margin-top: 30px;
+        margin-bottom: 90px;
+
+        img {
+            width: 70px;
+            height: 70px;
+            border-radius: 100%;
+            margin-right: 10px;
+
+            @include resp-large() {
+                width: 60px;
+                height: 60px;
+            }
+
+            @include resp-medium() {
+                width: 55px;
+                height: 55px;
+            }
+
+            @include resp-mobile() {
+                width: 50px;
+                height: 50px;
+            }
+        }
+
+        .name {
+            width: 18%;
+            font-size: $par-desktop;
+
+            @include resp-large() {
+                font-size: $par-desktop;
+                width: 23%;
+            }
+
+            @include resp-medium() {
+                font-size: $par-tablet;
+                width: 28%;
+            }
+
+            @include resp-mobile() {
+                font-size: $par-mobile;
+                width: 30%;
+            }
+        }
+    }
+}
+
+.linguagens {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    color: $principal-white;
+    margin-bottom: 90px;
+
+    .separar {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+        margin-top: 30px;
+
+        .tech {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            margin: 8px 24px;
+            padding: 10px;
+            width: 150px;
+            height: 150px;
+            border: 2px solid $principal-gray;
+            border-radius: 5px;
+            transition: 0.6s ease;
+
+            h2 {
+                margin-top: 20px;
+                font-size: $botao-desktop;
+            }
+
+            &:hover {
+                border: 2px solid $principal-white;
+            }
+        }
+    }
+}
+
+.contato {
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+
+    h2 {
+        text-align: center;
+        color: $principal-white;
+    }
+
+    .contato-botao {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+
+        a {
+            text-decoration: none;
+    
+            button {
+                width: 120px;
+                height: 40px;
+                background-color: $principal-black;
+                border: 2px solid $principal-gray;
+                border-radius: 5px;
+                transition: 0.6s ease;
+                color: $principal-white;
+                font-size: $botao-desktop;
+                font-family: 'Saira', sans-serif;
+                margin: 12px 10px 0px 10px;
+    
+                @include resp-mobile() {
+                    width: 100px;
+                    height: 40px;
+                    font-size: 16px;
+                }
+        
+                &:hover {
+                    border: 2px solid $principal-white;
+                }
+            }
+
+            .button-secondary {
+                width: 120px;
+                height: 40px;
+                background-color: $principal-white;
+                border: 2px solid #353333;
+                border-radius: 5px;
+                transition: 0.6s ease;
+                color: $principal-black;
+                font-size: $botao-desktop;
+                font-family: 'Saira', sans-serif;
+                margin: 12px 10px 0px 10px;
+    
+                @include resp-mobile() {
+                    width: 100px;
+                    height: 40px;
+                    font-size: 16px;
+                }
+        
+                &:hover {
+                    border: 2px solid $principal-white;
+                    background-color: $principal-black;
+                    color: $principal-white;
+                }
+            }
+        }
+    }
+}
+
+.projetos {
+    text-align: center;
+    color: $principal-white;
+    margin-top: 40px;
+    margin-bottom: 30px;
+
+    .carrossel {
+
+        .container {
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+            justify-content: center;
+            align-items: center;
+
+            a {
+
+                text-decoration: none;
+
+                .projeto {
+                    width: 150px;
+                    height: 150px;
+                    margin: 20px 24px;
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: center;
+                    background-color: $principal-black;
+                    border: 2px solid $principal-gray;
+                    border-radius: 5px;
+                    transition: .6s ease;
+
+                    color: $principal-gray;
+
+                    &:hover {
+                        border: 2px solid $principal-white;
+                        color: $principal-white;
+                    }
+    
+                    .font-icon {
+                        font-size: 60px;
+                    }
+    
+                    p {
+                        margin-top: 20px;
+                    }
+                }
+            }
+        }
+    }
+}

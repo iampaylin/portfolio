@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="icon" type="image/png" href="./img/logo.svg"/>
+
+    <title>Portfólio</title>
+
+    <link rel="stylesheet" href="css/style.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Saira&display=swap" rel="stylesheet">
+
+    <script src="https://kit.fontawesome.com/6f8be84ac9.js" crossorigin="anonymous"></script>
+    <script src="script.js"></script>
+</head>
+
+<body>
+    <header>
+        <img src="img/logo.svg" alt="">
+
+        <ul class="menu">
+            <li class="link">
+                <a href="#projetos">Projetos</a>
+            </li>
+            <li class="link">
+                <a href="#sobremim">Sobre mim</a>
+            </li>
+            <li class="link">
+                <a href="#contato">Contato</a>
+            </li>
+            <li class="li-mobile">
+                Portfólio
+            </li>
+        </ul>
+
+        <a href="https://github.com/iampaylin" target="_blank">
+            <button> GITHUB </button>
+        </a>
+    </header>
+
+    <main>
+        <h2>Paulo Cesar</h2>
+
+        <p>Desenvolvedor front-end</p>
+
+        <a href="./Currículo_PauloCesar.pdf" target="_blank"><button> CURRÍCULO </button></a>
+    </main>
+
+    <section class="projetos" id="projetos">
+        <h2>PROJETOS</h2>
+
+        <div class="carrossel">
+            <div class="container" id="img">
+                <a href="https://iampaylin.github.io/Relogio/" target="_blank">
+                    <div class="projeto">
+                        <i class="fa-regular fa-clock font-icon"></i>
+                        <p>Relógio</p>
+                    </div>
+                </a>
+
+                <a href="https://iampaylin.github.io/operacoesbasicas/op.html" target="_blank">
+                    <div class="projeto">
+                        <i class="fa-solid fa-square-root-variable font-icon"></i>
+                        <p>Calculadora <br> Básica</p>
+                    </div>
+                </a>
+
+                <a href="https://iampaylin.github.io/card/" target="_blank">
+                    <div class="projeto">
+                        <i class="fa-regular fa-address-card font-icon"></i>
+                        <p>Cartão</p>
+                    </div>
+                </a>
+
+                <a href="https://iampaylin.github.io/Playlists/" target="_blank">
+                    <div class="projeto">
+                        <i class="fa-solid fa-music font-icon"></i>
+                        <p>Playlists</p>
+                    </div>
+                </a>
+
+                <a href="https://iampaylin.github.io/albuns/" target="_blank">
+                    <div class="projeto">
+                        <i class="fa-solid fa-record-vinyl font-icon"></i>
+                        <p>Albuns</p>
+                    </div>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <section class="sobremim" id="sobremim">
+        <h2>SOBRE MIM</h2>
+
+        <p>
+            Olá, me chamo Paulo Cesar e estou cursando ciência da computação (3º Semestre).<br>
+            <br>
+            Atualmente, no mercado de tecnologia não possuo nenhuma experiência, porém, 
+            com ampla diversidade de conhecimento adquirida estudando me dedico a alguns 
+            projetos e exercícios de lógica de programação que podem ser encontrados em meu 
+            perfil no Github.<br>
+            <br>
+            Sobre carreira na área de tecnologia, venho dedicando meu tempo estudando algumas 
+            linguagens, o básico envolvendo HTML5, CSS3 e JavaScript tenho um ótimo domínio, pretendo 
+            seguir e me profissionalizar na área de desenvolvimento front-end.
+        </p>
+
+        <div class="profile">
+            <img src="./img/me.jpg" alt="">
+            <p class="name">Paulo Cesar</p>
+        </div>
+    </section>
+
+    <section class="linguagens">
+        <h2>LINGUAGENS</h2>
+
+        <div class="separar">
+            <div class="tech">
+                <img width="90" height="90" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg" />
+                <h2>HTML5</h2>
+            </div>
+            <div class="tech">
+                <img width="90" height="90" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg" />
+                <h2>CSS3</h2>
+            </div>
+            <div class="tech">
+                <img width="90" height="90" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-plain.svg" />
+                <h2>JavaScript</h2>
+            </div>
+        </div>
+
+        <div class="separar">
+            <div class="tech">
+                <img width="90" height="90" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg" />
+                <h2>React</h2>
+            </div>
+            <div class="tech">
+                <img width="90" height="90" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/sass/sass-original.svg" />
+                <h2>SASS</h2>
+            </div>
+            <div class="tech">
+                <img width="90" height="90" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/git/git-original.svg" />
+                <h2>git</h2>
+            </div>
+        </div>
+    </section>
+
+    <section class="contato" id="contato">
+        <h2>Contato</h2>
+
+        <div class="contato-botao">
+            <a href="mailto: itspaylin@gmail.com"><button onclick="email()">Email</button></a>
+            <a href="https://www.linkedin.com/in/paylin/" target="_blank"><button class="button-secondary">Linkedin</button></a>
+        </div>
+    </section>
+</body>
+</html>
